@@ -1,0 +1,32 @@
+﻿<Window x:Class="CarServiceNet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarServiceNet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Войти" Name="authBtn" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Click="authBtn_Click" Height="49" Width="117"/>
+        
+        <Label Content="Логин" HorizontalAlignment="Center" Margin="0 40" Grid.Row="0"  VerticalAlignment="Top" Width="529"/>
+        <TextBox x:Name="loginBox" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Width="529"/>
+        
+        <Label Content="Пароль" HorizontalAlignment="Center" Grid.Row="1"  VerticalAlignment="Top" Width="529"/>
+        <PasswordBox x:Name="passwBox"  HorizontalAlignment="Center" Margin="0 30" Grid.Row="1"  VerticalAlignment="Top" Width="529"/>
+        
+        <Label Content="Зарегистрироваться" Name="regBtn" Grid.Row="2" HorizontalAlignment="Center"  VerticalAlignment="Bottom" MouseDoubleClick="regBtn_MouseDoubleClick"/>
+        <Label Content="Авторизация в системе" HorizontalAlignment="Center"  VerticalAlignment="Top"/>
+
+        <Image Source="sources/card.jpg"/>
+
+
+        <Frame Name="allFrame" Grid.Row="0" Grid.RowSpan="3" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

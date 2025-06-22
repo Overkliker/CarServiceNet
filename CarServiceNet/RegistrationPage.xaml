@@ -1,0 +1,39 @@
+﻿<Page x:Class="CarServiceNet.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarServiceNet"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Зарегистрироваться" Name="reghBtn" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Click="reghBtn_Click" Height="49" Width="117"/>
+
+        <Label Content="Логин" HorizontalAlignment="Center" Margin="0 40" Grid.Row="0"  VerticalAlignment="Top" Width="529"/>
+        <TextBox Text="{Binding login}" x:Name="loginBox" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Width="529"/>
+
+        <Label Content="Пароль" HorizontalAlignment="Center" Grid.Row="0" Margin="0 30" VerticalAlignment="Bottom" Width="529"/>
+        <TextBox Text="{Binding password}" x:Name="passwBox"  HorizontalAlignment="Center" Margin="0 30 0 0" Grid.Row="0"  VerticalAlignment="Bottom" Width="529"/>
+
+        
+        <Label Content="ФИО" HorizontalAlignment="Center" Margin="0 40" Grid.Row="1"  VerticalAlignment="Top" Width="529"/>
+        <TextBox Text="{Binding fio}" x:Name="fioBox" TextWrapping="Wrap" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="529"/>
+
+        <Label Content="Номер телефона" HorizontalAlignment="Center" Grid.Row="1" Margin="0 30" VerticalAlignment="Bottom" Width="529"/>
+        <TextBox Text="{Binding phone}" x:Name="phoneBox"  HorizontalAlignment="Center" Margin="0 30 0 0" Grid.Row="1"  VerticalAlignment="Bottom" Width="529"/>
+
+        <Button Content="Авторизоваться" x:Name="athBtn" Grid.Row="2" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Click="athBtn_Click"/>
+        <Label Content="Регистрация в системе" HorizontalAlignment="Center"  VerticalAlignment="Top"/>
+
+
+        <Frame Name="regFrame" Grid.Row="0" Grid.RowSpan="3" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Page>

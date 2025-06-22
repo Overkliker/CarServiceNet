@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="917d76ea218e49a99718b7bfedb7131e" Name="Diagram1">
+        <EntityTypeShape EntityType="CarServiceDBModel.changeStatusMessages" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarServiceDBModel.comments" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarServiceDBModel.mastersReports" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarServiceDBModel.requests" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarServiceDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CarServiceDBModel.users" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="CarServiceDBModel.FK__changeSta__reque__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="CarServiceDBModel.FK__comments__master__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="CarServiceDBModel.FK__comments__reques__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="CarServiceDBModel.FK__mastersRe__reque__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="CarServiceDBModel.FK__requests__client__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="CarServiceDBModel.FK__requests__master__4E88ABD4" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
